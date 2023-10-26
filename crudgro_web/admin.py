@@ -8,7 +8,7 @@ from .models import Article
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     fields = ["title", "content", "year", "imgThumb"]
-    exclude = ["content"]
+    # exclude = ["content"]
     list_display = ["title", "year"]
     list_filter = ["year"]
     search_fields = ["title", "content"]
