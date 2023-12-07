@@ -9,5 +9,4 @@ urlpatterns = [
     path('', all_articles),
     path('admin/', admin.site.urls),
     path('test/', test_response),
-    path('crudgro/', include("crudgro_web.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

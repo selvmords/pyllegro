@@ -4,8 +4,9 @@ from .models import Article
 
 
 # Create your views here.
+# Z URLS ODSYLA TUTAJ
 def test_response(request):
-    return HttpResponse("To jest przykładowy url")
+    return HttpResponse("PRZYKLAD URL")
 
 
 def all_articles(request):
@@ -27,3 +28,6 @@ def all_articles(request):
             'articles': articles
         }
     )
+def index(response):
+    title_article = "artykuly"
+    return render(response, "template.html", {"title_article_view": title_article})
